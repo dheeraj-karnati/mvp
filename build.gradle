@@ -1,0 +1,33 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.ekin'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation platform("com.amazonaws:aws-java-sdk-bom:1.12.5")
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'commons-io:commons-io:2.8.0'
+	implementation 'org.apache.commons:commons-collections4:4.4'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.12.5'
+	implementation 'com.amazonaws:aws-java-sdk-ecs:1.12.5'
+	runtimeOnly 'org.hibernate:hibernate-validator:6.1.6.Final'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
