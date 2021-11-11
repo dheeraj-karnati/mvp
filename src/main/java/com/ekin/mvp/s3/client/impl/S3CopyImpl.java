@@ -6,7 +6,9 @@ import com.amazonaws.services.s3.model.CopyObjectRequest;
 import com.ekin.mvp.s3.client.S3Copy;
 import com.ekin.mvp.s3.config.S3Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class S3CopyImpl implements S3Copy {
 
     @Autowired

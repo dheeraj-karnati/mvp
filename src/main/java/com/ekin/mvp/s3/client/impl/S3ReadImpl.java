@@ -10,10 +10,12 @@ import com.ekin.mvp.s3.config.S3Configuration;
 import com.ekin.mvp.s3.util.S3FileUtil;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
+@Component
 public class S3ReadImpl implements S3Read {
 
 

@@ -24,7 +24,10 @@ dependencies {
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
     implementation 'com.amazonaws:aws-java-sdk-s3:1.12.5'
 	implementation 'com.amazonaws:aws-java-sdk-ecs:1.12.5'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	runtimeOnly 'org.hibernate:hibernate-validator:6.1.6.Final'
+
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
